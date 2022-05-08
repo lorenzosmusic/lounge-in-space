@@ -507,4 +507,50 @@
       </SelectionMemento>
     </MementoCommand>
   </UndoTransaction>
+  <UndoTransaction tv-sec="1651987683" tv-usec="858235" name="set loop range from region">
+    <MementoCommand obj-id="6956" type-name="ARDOUR::Location">
+      <Location id="6956" name="Loop" start="498071" end="8467200" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
+      <Location id="6956" name="Loop" start="1494214" end="2988430" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
+    </MementoCommand>
+    <MementoCommand obj-id="42" type-name="SelectionMemento">
+      <SelectionMemento mouse-mode="MouseObject" zoom="4268" left-frame="0" y-origin="65">
+        <Selection>
+          <Regions>
+            <Region id="6107"/>
+            <Region id="6140"/>
+            <Region id="6137"/>
+            <Region id="6134"/>
+            <Region id="6131"/>
+            <Region id="6128"/>
+            <Region id="6125"/>
+            <Region id="6122"/>
+            <Region id="6119"/>
+            <Region id="6116"/>
+            <Region id="6113"/>
+            <Region id="6110"/>
+          </Regions>
+          <Marker id="420" start="1"/>
+        </Selection>
+      </SelectionMemento>
+      <SelectionMemento mouse-mode="MouseObject" zoom="4268" left-frame="0" y-origin="65">
+        <Selection>
+          <Regions>
+            <Region id="6107"/>
+            <Region id="6140"/>
+            <Region id="6137"/>
+            <Region id="6134"/>
+            <Region id="6131"/>
+            <Region id="6128"/>
+            <Region id="6125"/>
+            <Region id="6122"/>
+            <Region id="6119"/>
+            <Region id="6116"/>
+            <Region id="6113"/>
+            <Region id="6110"/>
+          </Regions>
+          <Marker id="420" start="1"/>
+        </Selection>
+      </SelectionMemento>
+    </MementoCommand>
+  </UndoTransaction>
 </UndoHistory>

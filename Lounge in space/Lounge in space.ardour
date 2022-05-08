@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3002" name="Lounge in space" sample-rate="44100" end-is-free="0" id-counter="12919" name-counter="1" event-counter="106352" vca-counter="1">
-  <ProgramVersion created-with="Ardour 1:5.12.0-3ubuntu4" modified-with="Ardour 1:5.12.0-3ubuntu4"/>
+<Session version="3002" name="Lounge in space" sample-rate="44100" end-is-free="0" id-counter="15563" name-counter="1" event-counter="113826" vca-counter="1">
+  <ProgramVersion created-with="Ardour 1:5.12.0-3ubuntu4" modified-with="Ardour 1:5.12.0-3ubuntu4.1"/>
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
@@ -127,11 +127,11 @@
     <Region name="MIDI piano-2" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="155646" position="1587600" beat="51" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="MusicTime" layering-index="9" start-beats="0" length-beats="5" id="10269" type="midi" first-edit="nothing" source-0="10267" master-source-0="10267"/>
   </Regions>
   <Selection>
-    <StripableAutomationControl stripable="1620" control="0" order="4"/>
+    <StripableAutomationControl stripable="2572" control="0" order="8"/>
   </Selection>
   <Locations>
     <Location id="420" name="session" start="498071" end="8467200" flags="IsSessionRange" locked="0" position-lock-style="AudioTime"/>
-    <Location id="6956" name="Loop" start="498071" end="8467200" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
+    <Location id="6956" name="Loop" start="1494214" end="2988430" flags="IsAutoLoop" locked="0" position-lock-style="AudioTime"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -338,7 +338,7 @@
         <Automation>
           <AutomationList automation-id="gain" id="161" interpolation-style="Linear" state="Off"/>
         </Automation>
-        <Controllable name="gaincontrol" id="162" flags="GainLike" value="0.61276447772979736"/>
+        <Controllable name="gaincontrol" id="162" flags="GainLike" value="0.46464249491691589"/>
       </Processor>
       <Processor id="8756" name="Calf Equalizer 8 Band" active="1" user-latency="0" type="lv2" unique-id="http://calf.sourceforge.net/plugins/Equalizer8Band" count="1" custom="0">
         <Automation>
@@ -2234,7 +2234,7 @@
         </Automation>
         <Controllable name="gaincontrol" id="9756" flags="GainLike" value="0.58669775724411011"/>
       </Processor>
-      <Processor id="10145" name="Calf Flanger" active="0" user-latency="0" type="lv2" unique-id="http://calf.sourceforge.net/plugins/Flanger" count="1" custom="0">
+      <Processor id="10145" name="Calf Flanger" active="1" user-latency="0" type="lv2" unique-id="http://calf.sourceforge.net/plugins/Flanger" count="1" custom="0">
         <Automation>
           <AutomationList automation-id="parameter-4" id="9508" interpolation-style="Linear" state="Off"/>
           <AutomationList automation-id="parameter-5" id="9510" interpolation-style="Linear" state="Off"/>
@@ -3497,7 +3497,7 @@
       <Automation>
         <AutomationList automation-id="gain" id="49" interpolation-style="Linear" state="Off"/>
       </Automation>
-      <Controllable name="gaincontrol" id="50" flags="GainLike" value="1"/>
+      <Controllable name="gaincontrol" id="50" flags="GainLike" value="0.95712333917617798"/>
     </Processor>
   </Click>
   <LTC-In>
@@ -3530,6 +3530,31 @@
     <Protocol name="Mackie" active="0"/>
   </ControlProtocols>
   <Extra>
+    <ExportRevision revision="1"/>
+    <RangeExportProfile>
+      <ExportTimespan format="Timecode">
+        <Range id="6956"/>
+      </ExportTimespan>
+      <ExportChannelConfiguration split="0" channels="2">
+        <Channel number="1">
+          <Port name="Master/audio_out 1"/>
+        </Channel>
+        <Channel number="2">
+          <Port name="Master/audio_out 2"/>
+        </Channel>
+      </ExportChannelConfiguration>
+      <ExportFormat id="e61c1d0f-95bd-48fb-b812-def99dbabe28"/>
+      <ExportFilename>
+        <Folder relative="1" path="/export"/>
+        <Field name="label" enabled="1" value="space-lounge-chillout"/>
+        <Field name="session" enabled="0"/>
+        <Field name="snapshot" enabled="0"/>
+        <Field name="timespan" enabled="1"/>
+        <Field name="revision" enabled="0"/>
+        <Field name="time" enabled="0" value="T_None"/>
+        <Field name="date" enabled="0" value="D_None"/>
+      </ExportFilename>
+    </RangeExportProfile>
     <UI>
       <Window name="key-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="session-options-editor" visible="0" x-off="0" y-off="335" x-size="750" y-size="368"/>
@@ -3538,13 +3563,13 @@
       <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="679" y-size="509"/>
       <Window name="add-video" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="inspector" visible="0" x-off="37" y-off="55" x-size="620" y-size="370"/>
-      <Window name="audio-midi-setup" visible="0" x-off="589" y-off="0" x-size="582" y-size="438"/>
+      <Window name="audio-midi-setup" visible="0" x-off="260" y-off="248" x-size="582" y-size="438"/>
       <Window name="video-export" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="script-manager" visible="0" x-off="839" y-off="381" x-size="341" y-size="372"/>
       <Window name="bundle-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="locations" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="big-clock" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="audio-connection-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="0" x-off="73" y-off="126" x-size="691" y-size="680"/>
       <Window name="midi-connection-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="idle-o-meter" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="RPM-54" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
@@ -3580,12 +3605,14 @@
       <Window name="P-1620-1650" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-1620-2542" visible="0" x-off="0" y-off="31" x-size="1060" y-size="418" custom-ui="1"/>
       <Window name="P-1620-1771" visible="0" x-off="0" y-off="30" x-size="943" y-size="420" custom-ui="1"/>
+      <Window name="P-1620-12838" visible="0" x-off="451" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
       <Window name="P-1620-1652" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-1620-1653" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="PM-1651-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-1650-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-2542-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-1771-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-12838-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-1652-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-1653-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-4036-4050" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
@@ -3593,6 +3620,7 @@
       <Window name="P-4036-4212" visible="0" x-off="0" y-off="0" x-size="1920" y-size="1022" custom-ui="1"/>
       <Window name="P-4036-4233" visible="0" x-off="0" y-off="0" x-size="756" y-size="780" custom-ui="1"/>
       <Window name="P-4036-4138" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-4036-12755" visible="0" x-off="451" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
       <Window name="P-4036-4148" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-4036-4149" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="PM-4050-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
@@ -3600,6 +3628,7 @@
       <Window name="PM-4212-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-4233-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-4138-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-12755-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-4148-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-4149-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-5656-5672" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
@@ -3637,19 +3666,15 @@
       <Window name="P-9752-9850" visible="0" x-off="477" y-off="0" x-size="657" y-size="412" custom-ui="1"/>
       <Window name="P-9752-9782" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-9752-10145" visible="0" x-off="417" y-off="0" x-size="776" y-size="432" custom-ui="1"/>
+      <Window name="P-9752-12726" visible="0" x-off="477" y-off="0" x-size="806" y-size="334" custom-ui="1"/>
       <Window name="P-9752-9784" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="P-9752-9785" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
       <Window name="PM-9850-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-9782-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-10145-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-12726-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-9784-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="PM-9785-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="P-9752-12726" visible="0" x-off="477" y-off="0" x-size="806" y-size="334" custom-ui="1"/>
-      <Window name="PM-12726-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="P-4036-12755" visible="0" x-off="451" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
-      <Window name="PM-12755-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="P-1620-12838" visible="0" x-off="451" y-off="0" x-size="858" y-size="713" custom-ui="1"/>
-      <Window name="PM-12838-" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <GUIObjectState>
         <Object id="rtav 54" height="66" visible="1"/>
         <Object id="automation 58" height="66" visible="0"/>
@@ -3685,7 +3710,7 @@
           <Object id="processor 6873"/>
           <Object id="processor 12838"/>
         </Object>
-        <Object id="rtav 2572" height="66" visible="1" midnam-model-name="AVL-Drumkits-LV2:0x55afb7aX" midnam-custom-device-mode="Drumkit Keymap" color-mode="MeterColors" note-range-min="21" note-range-max="56"/>
+        <Object id="rtav 2572" height="66" visible="1" midnam-model-name="AVL-Drumkits-LV2:0x55a3025X" midnam-custom-device-mode="Drumkit Keymap" color-mode="MeterColors" note-range-min="21" note-range-max="56"/>
         <Object id="automation 2576" height="86" visible="0"/>
         <Object id="automation 2572 12/0/0" height="86" visible="0"/>
         <Object id="strip 2572" visible="1" strip-width="Wide">
@@ -3721,7 +3746,7 @@
           <Object id="processor 5507"/>
           <Object id="processor 5568"/>
         </Object>
-        <Object id="rtav 5656" height="66" visible="1" midnam-model-name="AVL-Drumkits-LV2:0x55afb85X" midnam-custom-device-mode="Drumkit Keymap" color-mode="MeterColors" note-range-min="27" note-range-max="47"/>
+        <Object id="rtav 5656" height="66" visible="1" midnam-model-name="AVL-Drumkits-LV2:0x55a3058X" midnam-custom-device-mode="Drumkit Keymap" color-mode="MeterColors" note-range-min="27" note-range-max="47"/>
         <Object id="automation 5675" height="66" visible="0"/>
         <Object id="automation 5656 12/0/0" height="66" visible="0"/>
         <Object id="automation 5659" height="66" visible="0"/>
